@@ -69,3 +69,10 @@ export const appConfig: AppConfig = {
         }
     ]
 };
+
+/**
+ * Navigation Type
+ *
+ * @defaultValue Static
+ */
+export const navigationType: 'Static' | 'Dynamic' = 'Static';

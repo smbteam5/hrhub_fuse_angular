@@ -2,3 +2,7 @@
 /*  @ Import/write your custom styles here.
 /*  @ Styles from this file will override 'vendors.scss' and Fuse's base styles.
 /* ----------------------------------------------------------------------------------------------------- */
+.gradient-bg{
+    background: rgb(43,194,212) !important;
+    background: linear-gradient(160deg, rgba(43,194,212,1) 0%, rgba(254,191,16,1) 0%, rgba(0,212,255,1) 100%) !important;
+}
