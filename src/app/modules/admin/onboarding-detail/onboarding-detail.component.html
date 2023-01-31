@@ -1,0 +1,212 @@
+<div class="w-full max-w-screen-xl mx-auto p-6">
+    <div class="card-wrap">
+        <div>
+            <div class="flex items-center justify-between w-full flex-wrap">
+                <div>
+                    <div class="text-3xl font-semibold tracking-tight leading-8">Onboarding Candidates</div>        
+                </div>
+                <div class="flex items-center flex-wrap gap-4 top_hd_oc">
+                    <button class="sm:inline-flex btn_nw_tkt approveBtn">
+                        <span class="add_pls">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.428 12.832">
+                                <g id="noun-tick-1318220" transform="translate(-277.94 -228.322)">
+                                  <path id="Path_2575" data-name="Path 2575" d="M279.522,234.261l-1.582,1.688,5.552,5.2,8.876-11.412-1.826-1.42-7.318,9.409Z" transform="translate(0 0)" fill="#fff"/>
+                                </g>
+                              </svg>                              
+                        </span>
+                        <span class="ml-2">Approve</span>
+                    </button>
+                    <button class="sm:inline-flex btn_nw_tkt mailBtn">
+                        <span class="add_pls">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.501 12.465">
+                                <path id="Path_2580" data-name="Path 2580" d="M100.85,112.036a2.85,2.85,0,0,0-2.081.784,2.934,2.934,0,0,0-.77,2.095v6.292a2.952,2.952,0,0,0,.77,2.1,2.884,2.884,0,0,0,2.081.791h12.4a2.884,2.884,0,0,0,2.081-.791,2.952,2.952,0,0,0,.77-2.1v-6.292a2.934,2.934,0,0,0-.77-2.1,2.85,2.85,0,0,0-2.081-.784h-12.4Zm0,1.2h12.4a3.28,3.28,0,0,1,.392.028l-6.007,6.406h-1.083l-6.079-6.407a3.034,3.034,0,0,1,.378-.028Zm-1.425.7,3.941,4.141-4,4a2.147,2.147,0,0,1-.164-.869v-6.293a1.979,1.979,0,0,1,.221-.976Zm15.25,0a1.979,1.979,0,0,1,.221.976v6.292a2.147,2.147,0,0,1-.164.869l-3.976-3.969,3.92-4.169ZM104.2,118.956l1.653,1.739a.635.635,0,0,0,.435.185H107.9a.615.615,0,0,0,.442-.192l1.6-1.7,3.848,3.855a2.411,2.411,0,0,1-.535.057h-12.4a2.411,2.411,0,0,1-.535-.057Z" transform="translate(-97.799 -111.836)" fill="#fff" stroke="#fff" stroke-width="0.4"/>
+                              </svg>  
+                        </span>
+                        <span class="ml-2">Mail</span>
+                    </button>
+                    <button class="sm:inline-flex btn_nw_tkt editBtn">
+                        <span class="add_pls">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 11.247 11.248">
+                                <g id="noun-pencil-10719" transform="translate(-75.624 -5.602)">
+                                  <path id="Path_2578" data-name="Path 2578" d="M82.43,131.074a.5.5,0,0,0-.7,0l-5.75,5.719a1.376,1.376,0,0,0-.352.847v1.472a.5.5,0,0,0,.5.5H77.6a1.382,1.382,0,0,0,.848-.351l5.735-5.734a.5.5,0,0,0,0-.7Z" transform="translate(0 -122.759)" fill="#fff"/>
+                                  <path id="Path_2579" data-name="Path 2579" d="M419.842,7.894a.5.5,0,0,1,0-.7l1.436-1.444a.5.5,0,0,1,.7,0l1.768,1.764a.5.5,0,0,1,0,.7L422.3,9.642a.5.5,0,0,1-.7,0Z" transform="translate(-337.021 0)" fill="#fff"/>
+                                </g>
+                              </svg>                   
+                        </span>
+                        <span class="ml-2">Edit</span>
+                    </button>
+                </div>
+            </div>
+           
+            <div class="pg_wrap">
+                <div class="col_for_add">
+                    <button class="sm:inline-flex ml-3 btn_nw_tkt" (click)="openDialog()">
+                        <span class="add_pls">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25px" height="25px" viewBox="0 0 11.247 11.248">
+                                <g id="noun-pencil-10719" transform="translate(-75.624 -5.602)">
+                                  <path id="Path_2578" data-name="Path 2578" d="M82.43,131.074a.5.5,0,0,0-.7,0l-5.75,5.719a1.376,1.376,0,0,0-.352.847v1.472a.5.5,0,0,0,.5.5H77.6a1.382,1.382,0,0,0,.848-.351l5.735-5.734a.5.5,0,0,0,0-.7Z" transform="translate(0 -122.759)" fill="#fff"/>
+                                  <path id="Path_2579" data-name="Path 2579" d="M419.842,7.894a.5.5,0,0,1,0-.7l1.436-1.444a.5.5,0,0,1,.7,0l1.768,1.764a.5.5,0,0,1,0,.7L422.3,9.642a.5.5,0,0,1-.7,0Z" transform="translate(-337.021 0)" fill="#fff"/>
+                                </g>
+                              </svg>                              
+                        </span>
+                        <span class="ml-2">Add as Employee</span>
+                    </button>
+                </div>
+                <div class="main_view view_ob_detail">
+                    <div class="b-info-item">
+                        <h2>Basic Information</h2>
+                        <div class="bi_list">
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Emergency Contact</h2>
+                        <div class="bi_list">
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Present Address</h2>
+                        <div class="bi_list">
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Permanent Address</h2>
+                        <div class="bi_list">
+                            <div class="bi_row">
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                                <div class="bi_item">
+                                    <span>Name</span>
+                                    <p>Sooraj NK</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Educational Qualification</h2>
+                        <div class="bi_desc">
+                            <p>Masters of Political science</p>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Professional Qualification</h2>
+                        <div class="bi_desc">
+                            <p>Masters of Political science</p>
+                        </div>
+                    </div>
+                    <div class="b-info-item">
+                        <mat-tab-group>
+                            <mat-tab label="Education Certificate"> 
+                                <div class="doc_wrap">
+                                    <div class="doc_item">
+                                        <div class="doc_in">
+                                            <div class="di_item">
+                                                <div class="dii_in">
+                                                    <div class="di_icon">
+                                                        <img src="../../../../assets/images/logo/pdf.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <span>certificate.png</span>
+                                            </div>
+                                            <div class="di_item">
+                                                <div class="dii_in">
+                                                    <div class="di_icon">
+                                                        <img src="../../../../assets/images/logo/pdf.svg" alt="">
+                                                    </div>
+                                                </div>
+                                                <span>certificate.png</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </mat-tab>
+                            <mat-tab label="Prefessional Certificate"> Content 2 </mat-tab>
+                            <mat-tab label="Salary Slip"> Content 3 </mat-tab>
+                            <mat-tab label="Identity & Address Proof"> Content 3 </mat-tab>
+                        </mat-tab-group>
+                    </div>
+                    <div class="b-info-item">
+                        <h2>Preferences</h2>
+                        <div class="bi_desc">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus metus id enim sollicitudin interdum. Proin at felis eros. Maecenas at ante sit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>

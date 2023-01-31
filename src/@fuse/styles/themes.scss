@@ -1,5 +1,72 @@
 @use '@angular/material' as mat;
 @use "sass:map";
+@mixin responsive($breakpoint){
+  @if $breakpoint == Forfold{
+      @media only screen and (max-width:280px){
+          @content
+      };
+  }
+  @if $breakpoint == Exsmall330{
+      @media only screen and (max-width:330px){
+          @content
+      };
+  }
+  @if $breakpoint == Exsmall355{
+      @media only screen and (max-width:355px){
+          @content
+      };
+  }
+  @if $breakpoint == Exsmall394{
+      @media only screen and (max-width:394px){
+          @content
+      };
+  }
+@if $breakpoint == Exsmall{
+    @media only screen and (max-width:474px){
+        @content
+    };
+}
+@if $breakpoint == phone{
+    @media only screen and (max-width:768px){
+        @content
+    };
+}
+@if $breakpoint == tab-port{
+    @media only screen and (max-width:992px){
+        @content
+    };
+}
+@if $breakpoint == tab-port-min{
+  @media only screen and (min-width:992px){
+      @content
+  };
+}
+@if $breakpoint == tab-port-1024{
+    @media only screen and (max-width:1024px){
+        @content
+    };
+}
+@if $breakpoint == device1200{
+    @media only screen and (min-width:1200px){
+        @content
+    };
+}
+@if $breakpoint == device1200Max{
+    @media only screen and (max-width:1200px){
+        @content
+    };
+}
+@if $breakpoint == tab-land{
+    @media only screen and (max-width:1400px){
+        @content
+    };
+}
+@if $breakpoint == big-desktop{
+    @media only screen and (min-width:1800px){
+        @content
+    };
+}
+}
 
 /* Include the core Angular Material styles */
 @include mat.core();
@@ -164,4 +231,97 @@ body .dark {
 
     /* Use all-component-colors to only generate the colors */
     @include mat.all-component-colors($dark-theme);
+}
+.mat-form-field.mat-form-field-appearance-fill.mat-form-field-has-label .mat-form-field-wrapper{
+    margin-top: 0 !important;
+    margin-bottom: 0;
+}
+  .form_fields{
+    display: flex;
+    gap:10px;
+    margin-top: 20px;
+    padding: 30px 20px 20px 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 2px 2px #00000012;
+    border-radius: 10px;
+    @include responsive(phone){
+      flex-wrap: wrap;
+    }
+    .ticket_item{
+        flex: 1;
+        .mat-form-field{
+            width: 100%;
+            .mat-form-field-label-wrapper{
+                top: -10px !important;
+                label{
+                    .ng-star-inserted{
+                        background-color: #fff;
+                        padding: 0 5px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+  }
+  .btn_nw_tkt{
+    color: #fff;
+    background: #1FB75E 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 5px;
+    align-items: center;
+    .add_pls{
+      font-size: 30px;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      svg{
+        width: 30px !important;
+        height: 35px !important;
+      }
+    }
+    &.approveBtn{
+        background: #1FB75E 0% 0% no-repeat padding-box;
+    }
+    &.mailBtn{
+        background: #1766A6 0% 0% no-repeat padding-box;
+    }
+    &.editBtn{
+        background: #2BC2D4 0% 0% no-repeat padding-box;
+    }
+    svg{
+        width: 20px !important;
+        height: 15px !important;
+    }
+  }
+.top_hd_oc{
+    @include responsive(phone){
+        margin-top: 20px;
+    }
+}
+.activeStatus{
+    background: #1FB75E 0% 0% no-repeat padding-box;
+    border-radius: 14px;
+    font: normal normal normal 12px/15px Proxima Nova;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    padding: 5px 15px;
+}
+.act_item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.change_pwd{
+    text-decoration: underline;
+    font: normal normal medium 16px/33px Proxima Nova;
+    letter-spacing: 0px;
+    color: #2BC2D4;
+}
+.btnSv{
+    background: #2BC2D4 0% 0% no-repeat padding-box;
 }

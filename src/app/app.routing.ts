@@ -1,3 +1,6 @@
+import { OnboardingCandidatesModule } from './modules/admin/onboarding-candidates/onboarding-candidates.module';
+import { OffersModule } from './modules/admin/offers/offers.module';
+import { DashboardModule } from './modules/admin/dashboard/dashboard.module';
 import { Route } from '@angular/router';
 import { AuthGuard } from 'app/core/auth/guards/auth.guard';
 import { NoAuthGuard } from 'app/core/auth/guards/noAuth.guard';
@@ -77,7 +80,18 @@ export const appRoutes: Route[] = [
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.module').then(m => m.ExampleModule)},
             {path: 'settings', loadChildren: () => import('app/modules/admin/settings/settings.module').then(m => m.SettingsModule)},
             {path: 'support-ticket', loadChildren: () => import('app/modules/admin/support-ticket/support-ticket.module').then(m => m.SupportTicketModule)},
-            
+            {path: 'employees', loadChildren: () => import('app/modules/admin/employees/employees.module').then(m => m.EmployeesModule)},
+            {path: 'dashboard', loadChildren: () => import('app/modules/admin/dashboard/dashboard.module').then(m => m.DashboardModule)},
+            {path: 'offers', loadChildren: () => import('app/modules/admin/offers/offers.module').then(m => m.OffersModule)},
+            {path: 'new-offer', loadChildren: () => import('app/modules/admin/new-offer/new-offer.module').then(m => m.NewOfferModule)},
+            {path: 'onboarding-candidates', loadChildren: () => import('app/modules/admin/onboarding-candidates/onboarding-candidates.module').then(m => m.OnboardingCandidatesModule)},
+            {path: 'onboarding-detail', loadChildren: () => import('app/modules/admin/onboarding-detail/onboarding-detail.module').then(m => m.OnboardingDetailModule)},
+            {path: 'employees-list', loadChildren: () => import('app/modules/admin/employees-list/employees-list.module').then(m => m.EmployeesListModule)},
+            {path: 'support-ticket-detail', loadChildren: () => import('app/modules/admin/support-ticket-detail/support-ticket-detail.module').then(m => m.SupportTicketDetailModule)},
+            {path: 'new-support-ticket', loadChildren: () => import('app/modules/admin/new-support-ticket/new-support-ticket.module').then(m => m.NewSupportTicketModule)},
+            {path: 'support-ticket-final', loadChildren: () => import('app/modules/admin/support-ticket-final/support-ticket-final.module').then(m => m.SupportTicketFinalModule)},
+            {path: 'leaves', loadChildren: () => import('app/modules/admin/leaves/leaves.module').then(m => m.LeavesModule)},
+            {path: 'settings-edit', loadChildren: () => import('app/modules/admin/settings-edit/settings-edit.module').then(m => m.SettingsEditModule)}
         ]
     }
 ];

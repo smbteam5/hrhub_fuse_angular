@@ -1,0 +1,197 @@
+
+@mixin responsive($breakpoint){
+    @if $breakpoint == Forfold{
+        @media only screen and (max-width:280px){
+            @content
+        };
+    }
+    @if $breakpoint == Exsmall330{
+        @media only screen and (max-width:330px){
+            @content
+        };
+    }
+    @if $breakpoint == Exsmall355{
+        @media only screen and (max-width:355px){
+            @content
+        };
+    }
+    @if $breakpoint == Exsmall394{
+        @media only screen and (max-width:394px){
+            @content
+        };
+    }
+  @if $breakpoint == Exsmall{
+      @media only screen and (max-width:474px){
+          @content
+      };
+  }
+  @if $breakpoint == phone{
+      @media only screen and (max-width:768px){
+          @content
+      };
+  }
+  @if $breakpoint == tab-port{
+      @media only screen and (max-width:992px){
+          @content
+      };
+  }
+  @if $breakpoint == tab-port-min{
+    @media only screen and (min-width:992px){
+        @content
+    };
+  }
+  @if $breakpoint == tab-port-1024{
+      @media only screen and (max-width:1024px){
+          @content
+      };
+  }
+  @if $breakpoint == device1200{
+      @media only screen and (min-width:1200px){
+          @content
+      };
+  }
+  @if $breakpoint == device1200Max{
+      @media only screen and (max-width:1200px){
+          @content
+      };
+  }
+  @if $breakpoint == tab-land{
+      @media only screen and (max-width:1400px){
+          @content
+      };
+  }
+  @if $breakpoint == big-desktop{
+      @media only screen and (min-width:1800px){
+          @content
+      };
+  }
+  }
+.b-info-item{
+    &:not(:last-child){
+        border-bottom: 1px solid #E2E6EA;
+    }
+    .bi_desc{
+        p{
+            margin-bottom: 0;
+            color: #188491;
+            font-size: 16px;
+            @include responsive(phone){
+                font-size: 14px;
+            }
+        }
+    }
+    padding: 15px 0;
+    h2{
+        text-align: left;
+        font-size: 20px;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+        font-weight: 600;
+        @include responsive(phone){
+            font-size: 18px;
+        }
+    }
+}
+.bi_list{
+    margin-top: 20px;
+    .bi_row{
+        display: flex;
+        flex-wrap: wrap;
+        @include responsive(phone){
+            flex-direction: column;
+        }
+        &:not(:last-child){
+            padding-bottom: 15px;
+        }
+        .bi_item{
+            flex-grow: 1;
+            span{
+                text-align: left;
+                font: normal normal normal 16px/19px Proxima Nova;
+                letter-spacing: 0px;
+                color: #188491;
+                opacity: 0.75;
+                @include responsive(phone){
+                    font-size: 16px;
+                }
+            }
+            p{
+                text-align: left;
+                font: normal normal 600 18px/27px Proxima Nova;
+                letter-spacing: 0px;
+                color: #191919;
+                opacity: 1;
+                @include responsive(phone){
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
+.doc_wrap{
+    .doc_item{
+        padding: 10px 0;
+        &:not(:last-child){
+            border-bottom: 1px solid #E2E6EA;
+        }
+        h3{
+            font-size: 19px;
+            letter-spacing: 0px;
+            color: #202020;
+            font-weight: 600;
+            @include responsive(phone){
+                font-size: 16px;
+            }
+        }
+        .doc_in{
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            .di_item{
+                .add_icon{
+                    span{
+                        background-color: #30d136;
+                        padding: 10px;
+                        display: inline-block;
+                        border-radius: 50%;
+                    }
+                }
+                .dii_in{
+                    padding: 8px 25px;
+                    background: #f845454f 0% 0% no-repeat padding-box;
+                    border-radius: 4px;
+                    .di_icon{
+                        width: 50px;
+                        height: 50px;
+                        border-radius: 50%;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        background: #F84545 0% 0% no-repeat padding-box;
+                        img{
+                            width: 50%;
+                            height: 100%;
+                            object-fit: contain;
+                        }
+                    }
+                }
+                & > span{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+}
+.view_ob_detail{
+    .b-info-item{
+        padding: 15px 20px;
+    }
+}
+.col_for_add{
+    padding: 0 15px 15px 15px;
+    border-bottom: 1px solid #E2E6EA;
+    display: flex;
+    justify-content: flex-end;
+}

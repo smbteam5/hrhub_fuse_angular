@@ -1,0 +1,32 @@
+.pg_title{
+    padding-bottom: 15px;
+}
+.tc_offer{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 1px 2px 2px #00000012;
+    border-radius: 10px;
+    padding: 30px;
+}
+.file_upload{
+    position: relative;
+    margin-bottom: 20px;
+    label{
+        span{
+            display: block;
+            .resume_icon{
+                background-color: #dedede;
+                padding: 15px 0;
+                border-radius: 4px;
+                width: 50px;
+                svg{
+                    width: 30px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+    input{
+        position: absolute;
+        visibility: hidden;
+    }
+}

@@ -14,19 +14,40 @@ export const navigationItems: FuseNavigationItem[] = [
         link: '/dashboard'
       },
       {
-        id: 'user',
-        title: 'User',
+        id: 'offers',
+        title: 'Offers',
         type: 'basic',
-        icon: 'heroicons_outline:users',
-        link: '/user'
-      }
-    ]
-  },
-  {
-    id: 'others',
-    title: 'Others',
-    type: 'group',
-    children: [
+        icon: 'offers',
+        link: '/offers'
+      },
+      {
+        id: 'onboarding',
+        title: 'Onboarding',
+        type: 'basic',
+        icon: 'onboarding',
+        link: '/onboarding-candidates'
+      },
+      {
+        id: 'employees',
+        title: 'Employees',
+        type: 'basic',
+        icon: 'employees',
+        link: '/employees'
+      },
+      {
+        id: 'leaves',
+        title: 'Leaves',
+        type: 'basic',
+        icon: 'leaves',
+        link: '/leaves'
+      },
+      {
+        id: 'support-ticket',
+        title: 'Support Tickets',
+        type: 'basic',
+        icon: 'tickets',
+        link: '/support-ticket'
+      },
       {
         id: 'settings',
         title: 'Settings',
@@ -35,27 +56,61 @@ export const navigationItems: FuseNavigationItem[] = [
         link: '/settings'
       },
       {
-        id: 'template',
+        id: 'employee-management',
+        title: 'Employee Management',
+        type: 'basic',
+        icon: 'management',
+        link: '/employees-list'
+      },
+      {
+        id: 'employee-management',
+        title: 'Events',
+        type: 'basic',
+        icon: 'events',
+        link: '/employees-list'
+      },
+      {
+        id: 'employee-management',
+        title: 'Upcoming Schedules',
+        type: 'basic',
+        icon: 'upcoming',
+        link: '/employees-list'
+      },
+      {
+        id: 'employee-management',
+        title: 'Schedule History',
+        type: 'basic',
+        icon: 'history',
+        link: '/employees-list'
+      },
+      {
+        id: 'employee-management',
+        title: 'Designation Management',
+        type: 'basic',
+        icon: 'designation',
+        link: '/employees-list'
+      },
+      {
+        id: 'employee-management',
         title: 'Email Template',
         type: 'basic',
         icon: 'email',
-        link: '/template'
+        link: '/employees-list'
       },
       {
-        id: 'cms-page-management',
+        id: 'employee-management',
         title: 'CMS Page Management',
         type: 'basic',
-        icon: 'pages',
-        link: '/cms-page-management'
+        icon: 'cms',
+        link: '/employees-list'
       },
       {
-        id: 'support-ticket',
-        title: 'Support Ticket',
+        id: 'employee-management',
+        title: 'Logout',
         type: 'basic',
-        icon: 'pages',
-        link: '/support-ticket'
-      },
-     
+        icon: 'logout',
+        link: '/employees-list'
+      }
     ]
   }
 ];

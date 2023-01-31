@@ -1,3 +1,4 @@
+import { MatDialog } from '@angular/material/dialog';
 import { Component } from '@angular/core';
 
 @Component({

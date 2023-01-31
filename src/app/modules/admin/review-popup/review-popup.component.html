@@ -1,0 +1,63 @@
+<div class="ticket_controller">
+  <div class="ticket_head">
+    <h2>Add Review</h2>
+    <span mat-button mat-dialog-close>
+      <svg fill="#000000" width="40px" height="40px" viewBox="-8.5 0 32 32" version="1.1">
+        <title>close</title>
+        <path d="M8.48 16l5.84-5.84c0.32-0.32 0.32-0.84 0-1.2-0.32-0.32-0.84-0.32-1.2 0l-5.84 5.84-5.84-5.84c-0.32-0.32-0.84-0.32-1.2 0-0.32 0.32-0.32 0.84 0 1.2l5.84 5.84-5.84 5.84c-0.32 0.32-0.32 0.84 0 1.2 0.16 0.16 0.4 0.24 0.6 0.24s0.44-0.080 0.6-0.24l5.84-5.84 5.84 5.84c0.16 0.16 0.36 0.24 0.6 0.24 0.2 0 0.44-0.080 0.6-0.24 0.32-0.32 0.32-0.84 0-1.2l-5.84-5.84z"/>
+      </svg>
+    </span>
+  </div>
+  <form class="form_fields_wrap">           
+      <div class="ticket_item">
+          <mat-form-field appearance="fill">
+              <input matInput [matDatepicker]="picker"  placeholder="Date">
+              <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+          </mat-form-field>
+      </div>
+      <div class="ticket_item">
+          <mat-form-field>
+            <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <div class="ticket_item">
+        <mat-form-field class="w-full">
+            <input
+                id="email"
+                matInput placeholder="increment">
+        </mat-form-field>
+    </div>
+    <div class="ticket_item">
+      <mat-form-field appearance="fill">
+          <input matInput [matDatepicker]="picker"  placeholder="Next Review On">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  </div>
+      <div class="ticket_item">
+          <mat-form-field>
+            <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+              <mat-option *ngFor="let food of foods" [value]="food.value">
+                {{food.viewValue}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+      </div>
+      <div class="ticket_item">
+        <mat-form-field class="w-full">
+          <textarea matInput 
+          placeholder="Comment" >
+       </textarea>
+        </mat-form-field>
+    </div>
+    <div class="foo_btns">
+      <button class="cancel_btn">Cancel</button>
+      <button class="add_btn">Add</button>
+    </div>
+  </form>       
+</div>   
