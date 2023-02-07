@@ -1397,7 +1397,7 @@
 
                     .mat-tab-label {
                         min-width: 0 !important;
-                        height: 40px !important;
+                        height: 40px ;
                         padding: 0 20px ;
                         // border-radius: 9999px !important;
                         // @apply text-secondary;
@@ -1711,4 +1711,56 @@ textarea.mat-input-element {
 }
 .comment_wrap .mat-form-field-flex{
     height: 120px;
+}
+.employee_onboarding_stepper{
+    .mat-tab-header{
+        overflow: inherit !important;
+    }
+    .mat-tab-label-container{
+        overflow: inherit;
+    }
+    .mat-tab-list{
+        margin-top: -25px;
+        display: flex;
+        justify-content: center;
+        .mat-tab-labels{
+            justify-content: center;
+            border-radius: 9px;
+            overflow: hidden;
+            display: inline-flex;
+            gap: 1px;
+            background-color: #fff;
+            .mat-tab-label{
+                background: #D7E6D5 0% 0% no-repeat padding-box;
+                opacity: 1;
+                color: #32A225;
+                margin-left: 0 !important;
+                display: inline-flex;
+                position: relative;
+                overflow: unset !important;
+                height: 50px !important;
+                padding: 5px 40px !important;
+                &:not(:last-child):before{
+                    display: block;
+                    content: "";
+                    background-image: url('../../../assets/images/right-arrow.svg');
+                    background-size: 20px 20px;
+                    height: 20px;
+                    width: 20px;
+                    position: absolute;
+                    right: -10px;
+                    z-index: 99;
+                 }
+                &.mat-tab-label-active {
+                    background: #32A225 0% 0% no-repeat padding-box;        
+                    color: #FFFFFF;        
+                }
+            }
+           
+        }
+    }
+}
+.mat-ripple:not(:empty){
+    // display: none !important;
+    transform: none !important;
 }

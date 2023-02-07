@@ -36,6 +36,7 @@ import { NewSupportTicketComponent } from './modules/admin/new-support-ticket/ne
 import { RequestPermissionPopupComponent } from './modules/admin/request-permission-popup/request-permission-popup.component';
 import { SupportTicketFinalComponent } from './modules/admin/support-ticket-final/support-ticket-final.component';
 import { SettingsEditComponent } from './modules/admin/settings-edit/settings-edit.component';
+import { OnboardingComponent } from './onboarding/onboarding.component';
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy       : PreloadAllModules,
@@ -56,7 +57,8 @@ const routerConfig: ExtraOptions = {
         NewSupportTicketComponent,
         RequestPermissionPopupComponent,
         SupportTicketFinalComponent,
-        SettingsEditComponent
+        SettingsEditComponent,
+        OnboardingComponent
     ],
     imports     : [
         BrowserModule,

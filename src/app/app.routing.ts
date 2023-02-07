@@ -1,3 +1,4 @@
+import { OnboardingModule } from './onboarding/onboarding.module';
 import { OnboardingCandidatesModule } from './modules/admin/onboarding-candidates/onboarding-candidates.module';
 import { OffersModule } from './modules/admin/offers/offers.module';
 import { DashboardModule } from './modules/admin/dashboard/dashboard.module';
@@ -64,6 +65,7 @@ export const appRoutes: Route[] = [
         },
         children   : [
             {path: 'home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
+            {path: 'onboarding', loadChildren: () => import('app/onboarding/onboarding.module').then(m => m.OnboardingModule)},
         ]
     },
 
