@@ -15,16 +15,766 @@
             <div class="emp_dtl_collection">
                 <mat-tab-group class="employee_onboarding_stepper">
                     <mat-tab label="Basic Information"> 
-                        1
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Personal Information</h2>
+                            </div>
+                            <form class="form_fields_wrap">
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">First Name</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="f_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Last Name</label>
+                                            <mat-form-field class="w-full">
+                                                <input id="l_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Email</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="email"
+                                                    matInput >
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Phone Number</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Residence Phone Number</label>
+                                            <mat-form-field class="w-full">
+                                                <input 
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Emergency Contact</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    matInput >
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">     
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Date of Birth</label>
+                                            <mat-form-field appearance="fill">
+                                                <input matInput [matDatepicker]="picker"  placeholder="Date">
+                                                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                                <mat-datepicker #picker></mat-datepicker>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>     
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Marital Status</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Housing</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>           
+                                </div>  
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">First Name</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="f_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Last Name</label>
+                                            <mat-form-field class="w-full">
+                                                <input id="l_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Email</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="email"
+                                                    matInput >
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Height</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="f_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Weight</label>
+                                            <mat-form-field class="w-full">
+                                                <input id="l_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">If you have Lens, Power:</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-full flex-1">
+                                        <div class="ticket_item">
+                                            <div class="lang_list">
+                                                <div class="lang_item">
+                                                    <span>English</span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.772" height="11.772" viewBox="0 0 11.772 11.772">
+                                                            <g id="noun-close-464817" transform="translate(-97.65 -27.652)">
+                                                              <path id="Path_2535" data-name="Path 2535" d="M103.536,27.652a5.886,5.886,0,1,0,5.886,5.886A5.893,5.893,0,0,0,103.536,27.652Zm2.136,8.022a.574.574,0,0,1-.812,0l-1.324-1.324-1.323,1.324a.574.574,0,1,1-.812-.812l1.323-1.324L101.4,32.214a.574.574,0,0,1,.812-.812l1.324,1.324L104.86,31.4a.574.574,0,0,1,.812.812l-1.324,1.324,1.324,1.324a.574.574,0,0,1,0,.812Z" fill="#274581"/>
+                                                            </g>
+                                                        </svg>                                                          
+                                                    </span>
+                                                </div>
+                                                <div class="lang_item">
+                                                    <span>English</span>
+                                                    <span>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="11.772" height="11.772" viewBox="0 0 11.772 11.772">
+                                                            <g id="noun-close-464817" transform="translate(-97.65 -27.652)">
+                                                              <path id="Path_2535" data-name="Path 2535" d="M103.536,27.652a5.886,5.886,0,1,0,5.886,5.886A5.893,5.893,0,0,0,103.536,27.652Zm2.136,8.022a.574.574,0,0,1-.812,0l-1.324-1.324-1.323,1.324a.574.574,0,1,1-.812-.812l1.323-1.324L101.4,32.214a.574.574,0,0,1,.812-.812l1.324,1.324L104.86,31.4a.574.574,0,0,1,.812.812l-1.324,1.324,1.324,1.324a.574.574,0,0,1,0,.812Z" fill="#274581"/>
+                                                            </g>
+                                                        </svg>                                                          
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>General Information</h2>
+                            </div>
+                            <form class="form_fields_wrap">
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Qualification</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="f_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Position Joined for</label>
+                                            <mat-form-field class="w-full">
+                                                <input id="l_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Date of Joining</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="email"
+                                                    matInput >
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3">
+                                        <div class="ticket_item">
+                                            <label for="">Days taken to join after receiving the Offer</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Have you been Interviewed by NewAgeSys Solutions (P) Ltd, Before?r</label>
+                                            <mat-form-field>
+                                                <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                  </mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">     
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Whether holding Valid Passport.</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div> 
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Passport No</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Date of issue</label>
+                                            <mat-form-field class="w-full">
+                                                <input
+                                                    id="f_name"
+                                                    matInput>
+                                            </mat-form-field>
+                                          </div>
+                                    </div>           
+                                </div>  
+                                <div class="flex sm:gap-4 flex-wrap">     
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Place of Issue</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div> 
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Valid upto</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>
+                                    <div class="md:w-1/3 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Whether holding Driving License</label>
+                                            <mat-form-field>
+                                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                  {{food.viewValue}}
+                                                </mat-option>
+                                              </mat-select>
+                                            </mat-form-field>
+                                        </div>
+                                    </div>           
+                                </div> 
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Have / Are any of your Relatives or Friends Worked / is Working with NewAgeSys Solutions?</label>
+                                            <mat-form-field>
+                                                <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                  </mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Please specify in detail</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Family Details</h2>
+                            </div>
+                            <div class="f_wrap">
+                                <span class="close_blk">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.772" height="11.772" viewBox="0 0 11.772 11.772">
+                                        <g id="noun-close-464817" transform="translate(-97.65 -27.652)">
+                                          <path id="Path_2535" data-name="Path 2535" d="M103.536,27.652a5.886,5.886,0,1,0,5.886,5.886A5.893,5.893,0,0,0,103.536,27.652Zm2.136,8.022a.574.574,0,0,1-.812,0l-1.324-1.324-1.323,1.324a.574.574,0,1,1-.812-.812l1.323-1.324L101.4,32.214a.574.574,0,0,1,.812-.812l1.324,1.324L104.86,31.4a.574.574,0,0,1,.812.812l-1.324,1.324,1.324,1.324a.574.574,0,0,1,0,.812Z" fill="#274581"/>
+                                        </g>
+                                    </svg>                                                          
+                                </span>
+                                <div class="f_list">
+                                    <div class="f_item">
+                                        <span>Name</span>
+                                        <h3>Joy Joseph</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Relation</span>
+                                        <h3>Father</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Age</span>
+                                        <h3>68</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Qualification</span>
+                                        <h3>B.A</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Occupation</span>
+                                        <h3>Farmer</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confBtn addBtn">
+                                <button class="contBtn"> <span><svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                    <g id="noun-plus-1049916" transform="translate(0)">
+                                      <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                    </g>
+                                  </svg>
+                                  </span> Add</button>
+                            </div>
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Helath Information</h2>
+                            </div>
+                            <form class="form_fields_wrap">
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/3">
+                                        <div class="ticket_item">
+                                            <label for="">How would you Rate your Present Health</label>
+                                            <mat-form-field>
+                                                <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                  </mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Do you have any Health Issues when it comes to Working during the Night Shift:</label>
+                                            <mat-form-field>
+                                                <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                  </mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Please specify in detail</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Physical Handicaps, if any</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Were you ever seriously ill, injured or operated</label>
+                                            <mat-form-field>
+                                                <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                                  <mat-option *ngFor="let food of foods" [value]="food.value">
+                                                    {{food.viewValue}}
+                                                  </mat-option>
+                                                </mat-select>
+                                              </mat-form-field>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Physical Handicaps, if any</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-100 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">What is your Blood Group</label>
+                                            <mat-form-field class="w-full">
+                                                <input matInput >
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Helath Information</h2>
+                            </div>
+                            <form class="form_fields_wrap">
+                                <div class="flex sm:gap-4 flex-wrap">
+                                    <div class="md:w-1/2">
+                                        <div class="ticket_item">
+                                            <label for="">Hobbies, if any</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                    <div class="md:w-1/2 flex-1">
+                                        <div class="ticket_item">
+                                            <label for="">Interest in Sports / Games, if any</label>
+                                            <mat-form-field class="w-full">
+                                                <textarea matInput 
+                                                placeholder="Comment" >
+                                             </textarea>
+                                              </mat-form-field>
+                                          </div>
+                                    </div>
+                                </div>
+                            </form>  
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Membership</h2>
+                            </div>
+                            <form class="form_fields_wrap">
+                                <div class="grid grid-cols-2 gap-4 justify-evenly"> 
+                                    <div class="item_tkt">
+                                        <div class="ticket_item">
+                                            <label for="">Professional Bodies</label>
+                                            <mat-form-field class="w-full">
+                                                <input matInput >
+                                              </mat-form-field>
+                                          </div>
+                                    </div> 
+                                    <div class="item_tkt">
+                                        <div class="ticket_item">
+                                            <label for="">Social Organization</label>
+                                            <mat-form-field class="w-full">
+                                                <input matInput >
+                                              </mat-form-field>
+                                          </div>
+                                    </div> 
+                                    <div class="item_tkt">
+                                        <div class="ticket_item">
+                                            <label for="">Clubs / Societies</label>
+                                            <mat-form-field class="w-full">
+                                                <input matInput >
+                                              </mat-form-field>
+                                          </div>
+                                    </div> 
+                                </div> 
+                            </form>  
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="confBtn">
+                                <button class="contBtn">Continue</button>
+                            </div>
+                        </div>
                     </mat-tab>
                     <mat-tab label="Qualification"> 
-                        2
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Education & Professional Qualifications</h2>
+                            </div>
+                            <div class="f_wrap">
+                                <span class="close_blk">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.772" height="11.772" viewBox="0 0 11.772 11.772">
+                                        <g id="noun-close-464817" transform="translate(-97.65 -27.652)">
+                                          <path id="Path_2535" data-name="Path 2535" d="M103.536,27.652a5.886,5.886,0,1,0,5.886,5.886A5.893,5.893,0,0,0,103.536,27.652Zm2.136,8.022a.574.574,0,0,1-.812,0l-1.324-1.324-1.323,1.324a.574.574,0,1,1-.812-.812l1.323-1.324L101.4,32.214a.574.574,0,0,1,.812-.812l1.324,1.324L104.86,31.4a.574.574,0,0,1,.812.812l-1.324,1.324,1.324,1.324a.574.574,0,0,1,0,.812Z" fill="#274581"/>
+                                        </g>
+                                    </svg>                                                          
+                                </span>
+                                <div class="grid grid-cols-3 gap-4 justify-evenly ed_profs">
+                                    <div class="f_item">
+                                        <span>Qualification</span>
+                                        <h3>Digree</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Institution</span>
+                                        <h3>CMS College Kottayam</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Date</span>
+                                        <h3>20/10/2020 - 20/10/2024</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Class/%Marks</span>
+                                        <h3>80%</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Main Subjects</span>
+                                        <h3>Farmer</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confBtn addBtn">
+                                <button class="contBtn"> <span><svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                    <g id="noun-plus-1049916" transform="translate(0)">
+                                      <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                    </g>
+                                  </svg>
+                                  </span> Add</button>
+                            </div>
+                            <div class="upload_list">
+                                <div class="ul_single">
+                                    <h2>Upload Education Certificate</h2>
+                                    <div class="ud_item">
+                                        <div class="ud_items_list">
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <div class="add_item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                                        <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                                    </svg>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="ul_single">
+                                    <h2>Upload Education Certificate</h2>
+                                    <div class="ud_item">
+                                        <div class="ud_items_list">
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <div class="add_item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                                        <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                                    </svg>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="confBtn">
+                                <button class="bkBtn">Back</button>
+                                <button class="contBtn">Continue</button>
+                            </div>
+                        </div>
                     </mat-tab>
                     <mat-tab label="Certificates"> 
-                       3
+                       
                     </mat-tab>
                     <mat-tab label="Preferences">
-    4
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="stepper_block_hd">
+                                <h2>Refference</h2>
+                                <p>Give at least three prominent references (other than relatives) or persons who have known you well personally and professionally particularly superiors from previous employment. We shall be writing to each one of them but no reference will be made to your present employer without your permission. Kindly provide their Contact Telephone Number and their E-mail ID.</p>
+                            </div>
+                            <div class="f_wrap">
+                                <span class="close_blk">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="11.772" height="11.772" viewBox="0 0 11.772 11.772">
+                                        <g id="noun-close-464817" transform="translate(-97.65 -27.652)">
+                                          <path id="Path_2535" data-name="Path 2535" d="M103.536,27.652a5.886,5.886,0,1,0,5.886,5.886A5.893,5.893,0,0,0,103.536,27.652Zm2.136,8.022a.574.574,0,0,1-.812,0l-1.324-1.324-1.323,1.324a.574.574,0,1,1-.812-.812l1.323-1.324L101.4,32.214a.574.574,0,0,1,.812-.812l1.324,1.324L104.86,31.4a.574.574,0,0,1,.812.812l-1.324,1.324,1.324,1.324a.574.574,0,0,1,0,.812Z" fill="#274581"/>
+                                        </g>
+                                    </svg>                                                          
+                                </span>
+                                <div class="grid grid-cols-3 gap-4 justify-evenly ed_profs">
+                                    <div class="f_item">
+                                        <span>Name & Address</span>
+                                        <h3>Jyothi S Kunnel House, Vazhakkala Ernakulam</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Official Designation</span>
+                                        <h3>Manager</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Period for which he / she knows you</span>
+                                        <h3>2 Years</h3>
+                                    </div>
+                                    <div class="f_item">
+                                        <span>Capacity in which he / she knows you</span>
+                                        <h3>Integer commodo odio a arcu bibendum, quis elementu</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="confBtn addBtn">
+                                <button class="contBtn"> <span><svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                    <g id="noun-plus-1049916" transform="translate(0)">
+                                      <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                    </g>
+                                  </svg>
+                                  </span> Add</button>
+                            </div>
+                        </div>
+                        <div class="stepper_inside" id="si_inside">                           
+                            <div class="upload_list">
+                                <div class="ul_single">
+                                    <div class="ul_hd">
+                                        <h2>Refference</h2>
+                                        <p>I hereby declare that the information is true to the best of knowledge and any misrepresentation made by me in this form will render me liable to dismissal from service, if appointed.</p>
+                                    </div>
+                                    <div class="grid grid-cols-2 gap-4 justify-evenly"> 
+                                        <div class="item_tkt">
+                                            <div class="ticket_item">
+                                                <label for="">Place</label>
+                                                <mat-form-field class="w-full">
+                                                    <input matInput >
+                                                  </mat-form-field>
+                                              </div>
+                                        </div> 
+                                        <div class="item_tkt">
+                                            <div class="ticket_item">
+                                                <label for="">Date</label>
+                                                <mat-form-field class="w-full">
+                                                    <input matInput >
+                                                  </mat-form-field>
+                                              </div>
+                                        </div> 
+                                    </div>
+                                    <div class="ud_item">
+                                        <div class="ud_items_list">
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <img src="../../assets/images/u1.svg" alt="">
+                                            </div>
+                                            <div class="udi_item">
+                                                <div class="add_item">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13.3" height="13.3" viewBox="0 0 13.3 13.3">
+                                                        <path id="Path_2536" data-name="Path 2536" d="M171.85,95.2a1.008,1.008,0,0,0-1.008,1.008v4.635h-4.635a1.008,1.008,0,0,0,0,2.015h4.635V107.5a1.008,1.008,0,0,0,2.015,0V102.86h4.635a1.008,1.008,0,1,0,0-2.015h-4.635V96.211A1.007,1.007,0,0,0,171.85,95.2Z" transform="translate(-165.2 -95.203)" fill="#fff"/>
+                                                    </svg>                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="stepper_inside" id="si_inside">
+                            <div class="confBtn">
+                                <button class="bkBtn">Back</button>
+                                <button class="contBtn">Continue</button>
+                            </div>
+                        </div>
                     </mat-tab>
                 </mat-tab-group>
             </div>

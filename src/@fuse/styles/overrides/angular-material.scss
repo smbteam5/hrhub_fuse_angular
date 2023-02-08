@@ -1764,3 +1764,12 @@ textarea.mat-input-element {
     // display: none !important;
     transform: none !important;
 }
+.stepper_inside#si_inside{
+    .mat-form-field-wrapper{
+        .mat-form-field-flex{
+            background-color: #F3F3F3 !important;
+            border: 0.5px solid #CCCCCC;
+            border-radius: 4px;
+        }
+    }
+}
