@@ -8,6 +8,13 @@
         </svg>
       </span>
     </div>
+    <div class="ticket_item">
+      <mat-form-field appearance="fill">
+          <input matInput [matDatepicker]="picker"  placeholder="Date">
+          <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+          <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+  </div>
     <form class="form_fields_wrap">           
      <div class="req_permisions">
       <div class="rp_item">

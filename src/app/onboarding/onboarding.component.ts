@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+import { FamilyPopupComponent } from './family-popup/family-popup.component';
 export interface Food {
   value: string;
   viewValue: string;
@@ -21,5 +23,15 @@ export class OnboardingComponent implements OnInit {
   ngOnInit(){
     this.selectedFood = this.foods[1].value;
   }
+  constructor(private dialogRef : MatDialog){}
+
+    openDialog(){
+        this.dialogRef.open(FamilyPopupComponent,
+          {
+            width: '600px',
+            backdropClass: 'confirmDialogComponent',
+            hasBackdrop: true
+          });
+    }
 
 }

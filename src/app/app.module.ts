@@ -1,3 +1,4 @@
+import { FamilyPopupComponent } from './onboarding/family-popup/family-popup.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatMenuModule } from '@angular/material/menu';
@@ -58,7 +59,8 @@ const routerConfig: ExtraOptions = {
         RequestPermissionPopupComponent,
         SupportTicketFinalComponent,
         SettingsEditComponent,
-        OnboardingComponent
+        OnboardingComponent,
+        FamilyPopupComponent
     ],
     imports     : [
         BrowserModule,

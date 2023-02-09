@@ -13,6 +13,8 @@
     padding-bottom: 60px;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+    flex-wrap: wrap;
+    gap: 10px;
     .eoLeft{
         img{
             width: 200px;
@@ -25,6 +27,9 @@
             color: #113E98;
         }
     }
+}
+.w-32p{
+    width: 32.333333% !important;
 }
 .stepper_inside{
     background-color: #fff;

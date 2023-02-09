@@ -1390,7 +1390,7 @@
 
         .mat-tab-label-container {
             padding: 0 24px;
-
+            
             .mat-tab-list {
 
                 .mat-tab-labels {
@@ -1715,14 +1715,24 @@ textarea.mat-input-element {
 .employee_onboarding_stepper{
     .mat-tab-header{
         overflow: inherit !important;
+        @include responsive(tab-port){
+            overflow: hidden !important;
+            margin-top: 25px;
+        }
     }
     .mat-tab-label-container{
         overflow: inherit;
+        @include responsive(tab-port){
+            padding: 0 0 !important;
+        }
     }
     .mat-tab-list{
         margin-top: -25px;
         display: flex;
         justify-content: center;
+        @include responsive(tab-port){
+            margin-top: 0;
+        }
         .mat-tab-labels{
             justify-content: center;
             border-radius: 9px;
@@ -1740,6 +1750,9 @@ textarea.mat-input-element {
                 overflow: unset !important;
                 height: 50px !important;
                 padding: 5px 40px !important;
+                @include responsive(tab-port){
+                    padding: 5px 15px !important;
+                }
                 &:not(:last-child):before{
                     display: block;
                     content: "";
@@ -1770,6 +1783,26 @@ textarea.mat-input-element {
             background-color: #F3F3F3 !important;
             border: 0.5px solid #CCCCCC;
             border-radius: 4px;
+        }
+    }
+    #text_area_match.text_area_match{
+        margin-top: 15px;
+        label{
+            font: normal normal normal 13px/16px Proxima Nova;
+            letter-spacing: 0px;
+            color: #2D2D2D;
+            display: block;
+            margin-bottom: 5px;
+        }
+        .mat-form-field-flex{
+            background-color: #fff !important;
+        }
+    }
+}
+.emp_dtl_collection{
+    .mat-tab-group {
+        .mat-tab-body-content{
+            padding: 24px 0 !important;
         }
     }
 }
