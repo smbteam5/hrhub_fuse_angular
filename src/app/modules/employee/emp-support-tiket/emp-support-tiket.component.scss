@@ -1,0 +1,48 @@
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  tr {
+    border-bottom: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    border-right: 0;
+    border-left: 0;
+  }
+  td, th {
+    border-bottom: 0;
+    text-align: left;
+    padding: 12px;
+    border-right: 0;
+    border-left: 0;
+    font-size: 16px;
+  }
+  span{
+    &.btn_med{
+        font: normal normal normal 12px/15px Proxima Nova;
+        letter-spacing: 0px;
+        color: #FEBF10;
+        text-transform: uppercase;
+        background: #FFFFFF 0% 0% no-repeat padding-box;
+        border: 1px solid #FEBF10;
+        border-radius: 14px;
+        display: inline-block;
+        padding: 5px 10px;
+    }
+    &.btn_resolved{
+        text-align: left;
+        font: normal normal normal 12px/15px Proxima Nova;
+        letter-spacing: 0px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        opacity: 1;
+        background: #2BC2D4 0% 0% no-repeat padding-box;
+        border-radius: 14px;
+        opacity: 1;
+        padding: 6px 10px;
+    }
+  }
+  .actionBtn{
+    cursor: pointer;
+  }

@@ -1,0 +1,193 @@
+<div class="w-full max-w-screen-xl mx-auto p-6">
+    <div class="flex items-center justify-between w-full">
+        <div>
+            <div class="text-3xl font-semibold tracking-tight leading-8">Support Ticket #NAS001</div>
+        </div>
+        <div class="flex items-center ml-6">
+            <button class="hidden sm:inline-flex ml-3 btn_nw_tkt">
+                <span class="add_pls">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="#fff" width="25px" height="25px" viewBox="-7 0 32 32" version="1.1">
+                    <path d="M17.040 15.16h-7.28v-7.24c0-0.48-0.36-0.84-0.84-0.84s-0.84 0.36-0.84 0.84v7.28h-7.24c-0.48-0.040-0.84 0.32-0.84 0.8s0.36 0.84 0.84 0.84h7.28v7.28c0 0.48 0.36 0.84 0.84 0.84s0.84-0.36 0.84-0.84v-7.32h7.28c0.48 0 0.84-0.36 0.84-0.84s-0.44-0.8-0.88-0.8z"/>
+                    </svg>
+                </span>
+                <span class="ml-2">New Ticket</span>
+            </button>
+        </div>
+    </div>
+    <div class="pg_wrap detail_wrap">
+        <div class="detail_hd">
+            <h1>Lorem ipsumsit amet, consectetur adipiscing elit. Aliquam tincidunt dolor sit amet, consectetur adipiscing elit. Aliquam tincidunt ex quis elit luctus luctus</h1>
+            <div class="detail_tag">
+                <span class="d_type">Type : Technical</span>
+                <span class="d_pol">Priority : Urgent</span>
+            </div> 
+        </div>
+        <div class="detail_dec">
+            <div class="s_name">
+                <div class="sn_left">
+                    <span>
+                        K
+                    </span>
+                </div>
+                <div class="sn_right">
+                    <p><b>Krishnadas</b></p>
+                    <p>11/25/2022 04:50pm</p>
+                </div>
+            </div>
+            <div class="detail_con">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque ligula, sit amet posuere tortor. Phasellus consequat quam nibh, vel laoreet neque ultricies in. Duis scelerisque pharetra imperdiet. Etiam tincidunt lacLorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a pellentesque ligula, sit amet posuere tortor.</p>
+                <p> Phasellus consequat quam nibh, vel laoreet neque ultricies in. Duis scelerisque pharetra imperdiet. Etiam tincidunt lacus sed ipsum ultricies, tristique elementum ex maximus. Vivamus bibendum orci eget felis feugiat, vel fermentum odio condimentum. Cras malesuada, augue vitae bibendum dignissim, purus leo consequat erosus sed ipsum ultricies, tristique elementum ex maximus. Vivamus bibendum orci eget felis feugiat, vel fermentum odio condimentum. Cras malesuada, augue vitae bibendum dignissim, purus leo consequat eros</p>
+            </div>
+        </div>
+        <div class="attachments">
+            <h2>Attachents</h2>
+            <div class="doc_wrap">
+                <div class="doc_item">
+                    <div class="doc_in">
+                        <div class="di_item">
+                            <div class="dii_in">
+                                <div class="di_icon">
+                                    <img src="../../../../assets/images/logo/pdf.svg" alt="">
+                                </div>
+                            </div>
+                            <span>certificate.png</span>
+                        </div>
+                        <div class="di_item">
+                            <div class="img_uplod">
+                                <img src="../../../../assets/images/logo/upload.svg" alt="">
+                            </div>
+                            <span>certificate.png</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="foo_st">
+            <div class="foo_st_nav">
+                <div class="fsn_left">
+                    <div class="fsn_item">
+                        <mat-form-field>
+                          <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                            <mat-option *ngFor="let food of foods" [value]="food.value">
+                              {{food.viewValue}}
+                            </mat-option>
+                          </mat-select>
+                        </mat-form-field>
+                    </div>
+                    <div class="fsn_item">
+                        <span>Managers</span>
+                        <span>
+                            <button class="reqBtn" (click)="openDialog()">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="15.882" height="14.416" viewBox="0 0 15.882 14.416">
+                                    <g id="noun-add-friend-4513972" transform="translate(-122.5 -73.5)">
+                                      <path id="Path_2555" data-name="Path 2555" d="M295.793,80.708a3.6,3.6,0,1,0-3.543-3.6A3.559,3.559,0,0,0,295.793,80.708Z" transform="translate(-163.825)" fill="#2bc2d4"/>
+                                      <path id="Path_2556" data-name="Path 2556" d="M222.48,302.75h-5.253a3.754,3.754,0,0,0-3.726,3.787v.977a1.63,1.63,0,0,0,1.588,1.649h9.529a1.592,1.592,0,0,0,1.588-1.649v-.977A3.794,3.794,0,0,0,222.48,302.75Z" transform="translate(-87.824 -221.248)" fill="#2bc2d4"/>
+                                      <path id="Path_2557" data-name="Path 2557" d="M125.676,169.326v-1.588h1.588v-1.588h-1.588V164.5h-1.588v1.649H122.5v1.588h1.588v1.588Z" transform="translate(0 -87.824)" fill="#2bc2d4"/>
+                                    </g>
+                                    </svg>
+                                  </span>
+                                <span>Request</span>
+                            </button>
+                        </span>
+                    </div>                   
+                </div>
+                <div class="fsn_right">
+                    <div class="fr_left">
+                        <label for="">Followers</label>
+                    </div>
+                    <div class="followers">
+                        <div class="follower">
+                            <span>K</span>
+                        </div>
+                        <div class="follower">
+                            <span>A</span>
+                        </div>
+                        <div class="follower">
+                            <span>M</span>
+                        </div>
+                        <div class="follower add_follower">
+                            <span>
+                                <svg id="noun-plus-1769465" xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13">
+                                    <path id="Path_12" data-name="Path 12" d="M266.9,190.4a1.219,1.219,0,0,0-1.219,1.219v4.062h-4.062a1.219,1.219,0,0,0,0,2.438h4.062v4.062a1.219,1.219,0,0,0,2.438,0v-4.062h4.062a1.219,1.219,0,0,0,0-2.438h-4.062v-4.062A1.219,1.219,0,0,0,266.9,190.4Z" transform="translate(-260.398 -190.4)" fill="#fff"/>
+                                  </svg>                                  
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="comment_list">
+                <div class="item_comment">
+                    <div class="comment_hd">
+                        <div class="comment_left">
+                            <span> <b>Prateesh K</b> Assigned to <b>Abhilash M</b></span>
+                        </div>
+                        <div class="comment_right">
+                            <span>11/25/2022 04:3PM</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item_comment">
+                    <div class="comment_hd">
+                        <div class="comment_left">
+                            <span> <b>Prateesh K</b> Replied</span>
+                        </div>
+                        <div class="comment_right">
+                            <span>11/25/2022 04:3PM</span>
+                        </div>
+                    </div>
+                    <div class="replied_msg">
+                        <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vitae justo metus. Maecenas semper metus vitae mi dapibus maximus. Maecenas vitae odio at nunc pretium iaculis quis et augue. Mauris luctus nulla elit, ut blandit augue dapibus non. Vivamus quis luctus mauris. Mauris commodo accumsan dictum. In faucibus efficitur ornare. In pellentesque ligula ut ex luctus, et sollicitudin dui consequat. Sed a orci nu</p>
+                    </div>
+                    <div class="uploads">
+                        <div class="uploads_wrap">
+                            <div class="doc_item">
+                                <div class="doc_in">
+                                    <div class="di_item">
+                                        <div class="img_uplod">
+                                            <img src="../../../../assets/images/logo/upload.svg" alt="">
+                                        </div>
+                                        <span>certificate.png</span>
+                                    </div>
+                                    <div class="di_item">
+                                        <div class="img_uplod">
+                                            <img src="../../../../assets/images/logo/upload.svg" alt="">
+                                        </div>
+                                        <span>certificate.png</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="foo_comment">
+                <div class="comment_wrap">
+                    <div class="comment_icon">
+                        <div class="file_upload">
+                            <label for="resume">
+                                <span>
+                                    <div class="resume_icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12.472" height="26.029" viewBox="0 0 12.472 26.029">
+                                            <g id="noun-attachment-1663171" transform="translate(-221.201 -11.199)" opacity="0.58">
+                                              <path id="Path_2554" data-name="Path 2554" d="M225.81,11.2a4.617,4.617,0,0,0-4.609,4.609V30.991a6.236,6.236,0,0,0,12.472,0V19.333a.814.814,0,1,0-1.627,0V30.991a4.609,4.609,0,1,1-9.218,0V15.808a2.982,2.982,0,0,1,5.965,0V30.991a1.356,1.356,0,0,1-2.711,0V15.808a.814.814,0,1,0-1.627,0V30.991a2.983,2.983,0,1,0,5.965,0V15.808A4.617,4.617,0,0,0,225.81,11.2Z" transform="translate(0)" fill="#707070"/>
+                                            </g>
+                                          </svg>                                      
+                                    </div>
+                                </span>
+                            </label>
+                            <input type="file" id="resume">                        
+                       </div>
+                    </div>
+                    <mat-form-field class="w-full">
+                        <textarea matInput placeholder="Comment">
+                        </textarea>
+                    </mat-form-field>
+                </div>
+                <div class="replyBtn">
+                    <button>Reply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

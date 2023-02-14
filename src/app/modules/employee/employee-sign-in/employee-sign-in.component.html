@@ -2,16 +2,16 @@
     <div class="md:flex md:items-center md:justify-end w-full sm:w-auto md:h-full md:w-1/2 py-8 px-4 sm:p-12 md:p-16 sm:rounded-2xl md:rounded-none sm:shadow md:shadow-none sm:bg-card">
         <div class="w-full max-w-80 sm:w-80 mx-auto sm:mx-0">
             <!-- Logo -->
-            <div class="w-40">
-                <img src="assets/images/logo/hr-hub.svg">
+            <div class="w-40 logo_employee">
+                <img src="assets/images/logo-emp.svg">
             </div>
 
             <!-- Title -->
-            <div class="mt-10 text-4xl font-extrabold tracking-tight leading-tight">Sign in</div>
+            <div class="mt-8 text-4xl font-extrabold tracking-tight leading-tight">Sign in</div>
             <div class="flex items-baseline mt-0.5 font-medium">
                 <div>Don't have an account?</div>
                 <a
-                    class="ml-1 text-primary-500 hover:underline"
+                    class="ml-1 hover:underline clr_FEBF10"
                     [routerLink]="['/sign-up']">Sign up
                 </a>
             </div>
@@ -29,17 +29,14 @@
 
             <!-- Sign in form -->
             <form
-                class="mt-10"
-                [formGroup]="signInForm"
-                #signInNgForm="ngForm">
+                class="mt-10">
 
                 <!-- Email field -->
                 <mat-form-field class="w-full">
                     <mat-label>Email address</mat-label>
                     <input
                         id="email"
-                        matInput
-                        [formControlName]="'email'">
+                        matInput>
                     <mat-error *ngIf="signInForm.get('email').hasError('email')">
                         Please enter a valid email address
                     </mat-error>
@@ -52,7 +49,6 @@
                         id="password"
                         matInput
                         type="password"
-                        [formControlName]="'password'"
                         #passwordField>
                     <button
                         mat-icon-button
@@ -75,20 +71,18 @@
 
                 <!-- Actions -->
                 <div class="inline-flex items-end justify-between w-full mt-1.5">
-                    <mat-checkbox
-                        [color]="'primary'"
-                        [formControlName]="'rememberMe'">
+                    <mat-checkbox>
                         Remember me
                     </mat-checkbox>
                     <a
-                        class="text-md font-medium text-primary-500 hover:underline"
+                        class="text-md font-medium hover:underline clr_FEBF10"
                         [routerLink]="['/forgot-password']">Forgot password?
                     </a>
                 </div>
 
                 <!-- Submit button -->
                 <button
-                    class="fuse-mat-button-large w-full mt-6"
+                    class="fuse-mat-button-large w-full mt-6 bg_2BC2D4"
                     mat-flat-button
                     [color]="'primary'"
                     [disabled]="signInForm.disabled"
@@ -104,7 +98,7 @@
             </form>
         </div>
     </div>
-    <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 lg:px-28 overflow-hidden bg-primary dark:border-l">
+    <div class="relative hidden md:flex flex-auto items-center justify-center w-1/2 h-full p-16 lg:px-28 overflow-hidden bg-gradient dark:border-l">
         <!-- Background - @formatter:off -->
         <!-- Rings -->
         <svg class="absolute inset-0 pointer-events-none"

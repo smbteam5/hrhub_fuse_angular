@@ -1,3 +1,4 @@
+import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FamilyPopupComponent } from './onboarding/family-popup/family-popup.component';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatNativeDateModule } from '@angular/material/core';
@@ -38,6 +39,13 @@ import { RequestPermissionPopupComponent } from './modules/admin/request-permiss
 import { SupportTicketFinalComponent } from './modules/admin/support-ticket-final/support-ticket-final.component';
 import { SettingsEditComponent } from './modules/admin/settings-edit/settings-edit.component';
 import { OnboardingComponent } from './onboarding/onboarding.component';
+import { EmployeeSignInComponent } from './modules/employee/employee-sign-in/employee-sign-in.component';
+import { EmpDashboardComponent } from './modules/employee/emp-dashboard/emp-dashboard.component';
+import { EmpSupportTiketComponent } from './modules/employee/emp-support-tiket/emp-support-tiket.component';
+import { EmpNewSupportTiketComponent } from './modules/employee/emp-new-support-tiket/emp-new-support-tiket.component';
+import { EmpSupportTiketDetailComponent } from './modules/employee/emp-support-tiket-detail/emp-support-tiket-detail.component';
+import { EmpLeavesComponent } from './modules/employee/emp-leaves/emp-leaves.component';
+import { ApplyLeaveComponent } from './modules/employee/apply-leave/apply-leave.component';
 
 const routerConfig: ExtraOptions = {
     preloadingStrategy       : PreloadAllModules,
@@ -60,7 +68,14 @@ const routerConfig: ExtraOptions = {
         SupportTicketFinalComponent,
         SettingsEditComponent,
         OnboardingComponent,
-        FamilyPopupComponent
+        FamilyPopupComponent,
+        EmployeeSignInComponent,
+        EmpDashboardComponent,
+        EmpSupportTiketComponent,
+        EmpNewSupportTiketComponent,
+        EmpSupportTiketDetailComponent,
+        EmpLeavesComponent,
+        ApplyLeaveComponent
     ],
     imports     : [
         BrowserModule,
@@ -92,7 +107,8 @@ const routerConfig: ExtraOptions = {
         MatDatepickerModule,
         MatMenuModule,
         MatNativeDateModule,
-        MatTabsModule
+        MatTabsModule,
+        MatCheckboxModule
     ],
     bootstrap   : [
         AppComponent

@@ -1,0 +1,103 @@
+<div class="w-full max-w-screen-xl mx-auto p-6">
+    <div class="flex items-center justify-between w-full">
+        <div class="pg_title">
+            <div class="text-3xl font-semibold tracking-tight leading-8">Apply Leave</div>
+        </div>
+    </div>
+    <div class="ticket_controller">
+        <div class="tc_offer md:w-1/2">
+            <form class="form_fields_wrap">   
+                <div class="flex sm:gap-4 flex-wrap">
+                    <div class="md:w-full flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field>
+                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>                 
+                </div>  
+                <div class="flex sm:gap-4 flex-wrap">
+                    <div class="md:w-full flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field appearance="fill">
+                                <input matInput [matDatepicker]="picker"  placeholder="Date">
+                                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex sm:gap-4 flex-wrap">
+                    <div class="md:w-1/2 flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field class="w-full">
+                                <input
+                                    matInput placeholder="Date">
+                            </mat-form-field>
+                          </div>
+                    </div>
+                    <div class="md:w-1/2 flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field appearance="fill">
+                                <input matInput [matDatepicker]="picker"  placeholder="Date">
+                                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex sm:gap-4 flex-wrap">
+                    <div class="md:w-1/2 flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field class="w-full">
+                                <input
+                                    matInput placeholder="Date">
+                            </mat-form-field>
+                          </div>
+                    </div>
+                    <div class="md:w-1/2 flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field appearance="fill">
+                                <input matInput [matDatepicker]="picker"  placeholder="Date">
+                                <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                                <mat-datepicker #picker></mat-datepicker>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-wrap">
+                    <div class="w-full">
+                        <div class="ticket_item">
+                            <mat-form-field class="w-full">
+                              <textarea matInput 
+                              placeholder="Comment" >
+                           </textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex sm:gap-4 flex-wrap">
+                    <div class="md:w-full flex-1">
+                        <div class="ticket_item">
+                            <mat-form-field>
+                              <mat-select placeholder="Favorite food" name="foods" [(value)]="selectedFood">
+                                <mat-option *ngFor="let food of foods" [value]="food.value">
+                                  {{food.viewValue}}
+                                </mat-option>
+                              </mat-select>
+                            </mat-form-field>
+                        </div>
+                    </div>                 
+                </div> 
+                <div class="foo_btns">
+                    <button class="cancel_btn">Back</button>
+                    <button class="add_btn">Save</button>
+                </div>
+            </form>     
+        </div>        
+    </div>   
+</div>

@@ -64,6 +64,8 @@ export const appRoutes: Route[] = [
             layout: 'empty'
         },
         children   : [
+            {path: 'sign', loadChildren: () => import('app/modules/auth/sign-in/sign-in.module').then(m => m.AuthSignInModule)},
+            {path: 'employee-sign', loadChildren: () => import('app/modules/employee/employee-sign-in/employee-sign-in.module').then(m => m.EmployeeSignInModule)},
             {path: 'home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
             {path: 'onboarding', loadChildren: () => import('app/onboarding/onboarding.module').then(m => m.OnboardingModule)},
         ]
@@ -78,7 +80,7 @@ export const appRoutes: Route[] = [
         resolve    : {
             initialData: InitialDataResolver,
         },
-        children   : [
+        children   : [            
             {path: 'example', loadChildren: () => import('app/modules/admin/example/example.module').then(m => m.ExampleModule)},
             {path: 'settings', loadChildren: () => import('app/modules/admin/settings/settings.module').then(m => m.SettingsModule)},
             {path: 'support-ticket', loadChildren: () => import('app/modules/admin/support-ticket/support-ticket.module').then(m => m.SupportTicketModule)},
@@ -93,7 +95,15 @@ export const appRoutes: Route[] = [
             {path: 'new-support-ticket', loadChildren: () => import('app/modules/admin/new-support-ticket/new-support-ticket.module').then(m => m.NewSupportTicketModule)},
             {path: 'support-ticket-final', loadChildren: () => import('app/modules/admin/support-ticket-final/support-ticket-final.module').then(m => m.SupportTicketFinalModule)},
             {path: 'leaves', loadChildren: () => import('app/modules/admin/leaves/leaves.module').then(m => m.LeavesModule)},
-            {path: 'settings-edit', loadChildren: () => import('app/modules/admin/settings-edit/settings-edit.module').then(m => m.SettingsEditModule)}
+            {path: 'settings-edit', loadChildren: () => import('app/modules/admin/settings-edit/settings-edit.module').then(m => m.SettingsEditModule)},
+
+            // employee
+            {path: 'emp-dashboard', loadChildren: () => import('app/modules/employee/emp-dashboard/emp-dashboard.module').then(m => m.EmpDashboardModule)},
+            {path: 'emp-support-tiket', loadChildren: () => import('app/modules/employee/emp-support-tiket/emp-support-tiket-routing.module').then(m => m.EmpSupportTiketRoutingModule)},
+            {path: 'emp-new-support-tiket', loadChildren: () => import('app/modules/employee/emp-new-support-tiket/emp-new-support-tiket-routing.module').then(m => m.EmpNewSupportTiketRoutingModule)},
+            {path: 'emp-support-tiket-detail', loadChildren: () => import('app/modules/employee/emp-support-tiket-detail/emp-support-tiket-detail-routing.module').then(m => m.EmpSupportTiketDetailRoutingModule)},
+            {path: 'emp-leaves', loadChildren: () => import('app/modules/employee/emp-leaves/emp-leaves-routing.module').then(m => m.EmpLeavesRoutingModule)},
+            {path: 'apply-leaves', loadChildren: () => import('app/modules/employee/apply-leave/apply-leave-routing.module').then(m => m.ApplyLeaveRoutingModule)}
         ]
     }
 ];
