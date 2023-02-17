@@ -68,6 +68,8 @@ export const appRoutes: Route[] = [
             {path: 'employee-sign', loadChildren: () => import('app/modules/employee/employee-sign-in/employee-sign-in.module').then(m => m.EmployeeSignInModule)},
             {path: 'home', loadChildren: () => import('app/modules/landing/home/home.module').then(m => m.LandingHomeModule)},
             {path: 'onboarding', loadChildren: () => import('app/onboarding/onboarding.module').then(m => m.OnboardingModule)},
+            {path: 'thank-you', loadChildren: () => import('app/onboarding/thankyou/thankyou-routing.module').then(m => m.ThankyouRoutingModule)},
+            {path: 'error-message', loadChildren: () => import('app/onboarding/error/error-routing.module').then(m => m.ErrorRoutingModule)}
         ]
     },
 
